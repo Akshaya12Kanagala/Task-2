@@ -54,14 +54,14 @@ The button text claims a PayPal action but resolves to an unrelated host (treebe
 The sample contains misspellings like “Your account has been Iimited untiI we hear from you” (capital I used instead of lowercase L in “Limited / until”) and the sender address itself Acces@up.com (missing one ‘s’). Spelling/grammar errors are common phishing signals.
 
 ### Step 8 : Summary
- Display name “Customer service” but actual From address is Acces@up.com (domain unrelated to PayPal) — suspicious.
- Button claims PayPal action but links to a third-party host (treebeard.mschosting.com) — mismatched URL/redirect.
- Urgent language pushing immediate action — classic social engineering.
- Spelling/typos visible in subject and sender — another marker.
- High—likely credential-harvesting or invoice scam. (Krebs and Fortinet detail similar PayPal scams where phishing pages or invoices are used to capture credentials or link malicious accounts.)
+ 1. Display name “Customer service” but actual From address is Acces@up.com (domain unrelated to PayPal) — suspicious.
+ 2. Button claims PayPal action but links to a third-party host (treebeard.mschosting.com) — mismatched URL/redirect.
+ 3. Urgent language pushing immediate action — classic social engineering.
+ 4. Spelling/typos visible in subject and sender — another marker.
+ 5. High—likely credential-harvesting or invoice scam. (Krebs and Fortinet detail similar PayPal scams where phishing pages or invoices are used to capture credentials or link malicious accounts.)
 
 #### Recommended  actions:
- Quarantine the message and preserve the raw .eml. (If only screenshot exists, preserve that.)
- Extract and document link(s) — do not click. Submit to PhishTank and check whether the link is legitimate or not.
- If any user clicked, advise password reset + enable MFA and monitor account activity.
- Report to APWG / org security team and forward the raw headers to your security team for further triage.
+ 1. Quarantine the message and preserve the raw .eml. (If only screenshot exists, preserve that.)
+ 2. Extract and document link(s) — do not click. Submit to PhishTank and check whether the link is legitimate or not.
+ 3. If any user clicked, advise password reset + enable MFA and monitor account activity.
+ 4. Report to APWG / org security team and forward the raw headers to your security team for further triage.
