@@ -22,7 +22,7 @@ A phishing email is a fraudulent message designed to look authentic. It usually 
 ### Step 1 : Obtraining a phishing email:
 We can obtain a sample phishing emain from the internet.
 This is the reference I am using https://security.berkeley.edu/news/phishing-example-paypal-we-need-your-help
-Please look for the the image of the email will be attached in a different file labelled as "phishing email sample exapmle".
+Please look for the the image of the email will be attached in a different file labelled as "phishing email sample example".
 
 ### Step 2 : Examining sender’s email address for spoofing:
 1. As visible in the screenshort, From: Customer service <Acces@up.com> (notice the misspelling Acces and the domain up.com which is not paypal.com).
