@@ -32,9 +32,9 @@ Solution: We can flag the sender, block domain if repeated, and preserve the raw
 ### Step 3 : Checking email headers for discrepancies (steps to follow if you had a raw file):
 Since the sample phishing used in this example is just an image, headers are not available here.
 But if we have the .eml file you should paste the full headers into MXToolbox or Microsoft Message Header Analyzer and check:
-1.Received: chain (first hop IP)
-2.Return-Path / envelope-from
-3.Authentication-Results (SPF / DKIM / DMARC)
+1. Received: chain (first hop IP)
+2. Return-Path / envelope-from
+3. Authentication-Results (SPF / DKIM / DMARC)
 If it fails or is missing SPF/DKIM/DMARC is strong evidence of spoofing.
 #### Tools: tools: MXToolbox, Microsoft header analyzer, PhishTank (for URLs/attachments).
 
@@ -54,14 +54,14 @@ The button text claims a PayPal action but resolves to an unrelated host (treebe
 The sample contains misspellings like “Your account has been Iimited untiI we hear from you” (capital I used instead of lowercase L in “Limited / until”) and the sender address itself Acces@up.com (missing one ‘s’). Spelling/grammar errors are common phishing signals.
 
 ### Step 8 : Summary
-Display name “Customer service” but actual From address is Acces@up.com (domain unrelated to PayPal) — suspicious.
-Button claims PayPal action but links to a third-party host (treebeard.mschosting.com) — mismatched URL/redirect.
-Urgent language pushing immediate action — classic social engineering.
-Spelling/typos visible in subject and sender — another marker.
-High—likely credential-harvesting or invoice scam. (Krebs and Fortinet detail similar PayPal scams where phishing pages or invoices are used to capture credentials or link malicious accounts.)
+ Display name “Customer service” but actual From address is Acces@up.com (domain unrelated to PayPal) — suspicious.
+ Button claims PayPal action but links to a third-party host (treebeard.mschosting.com) — mismatched URL/redirect.
+ Urgent language pushing immediate action — classic social engineering.
+ Spelling/typos visible in subject and sender — another marker.
+ High—likely credential-harvesting or invoice scam. (Krebs and Fortinet detail similar PayPal scams where phishing pages or invoices are used to capture credentials or link malicious accounts.)
 
 #### Recommended  actions:
-Quarantine the message and preserve the raw .eml. (If only screenshot exists, preserve that.)
-Extract and document link(s) — do not click. Submit to PhishTank and check whether the link is legitimate or not.
-If any user clicked, advise password reset + enable MFA and monitor account activity.
-Report to APWG / org security team and forward the raw headers to your security team for further triage.
+ Quarantine the message and preserve the raw .eml. (If only screenshot exists, preserve that.)
+ Extract and document link(s) — do not click. Submit to PhishTank and check whether the link is legitimate or not.
+ If any user clicked, advise password reset + enable MFA and monitor account activity.
+ Report to APWG / org security team and forward the raw headers to your security team for further triage.
